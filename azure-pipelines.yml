@@ -9,6 +9,16 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+resources:
+  webhooks:
+    - webhook: Contenful          ### Webhook alias
+      connection: Contentful    ### Incoming webhook service connection
+      filters:
+        - path: repositoryName      ### JSON path in the payload
+          value: maven-releases     ### Expected value in the path provided
+        - path: action
+          value: CREATED
+
 steps:
 - task: NodeTool@0
   inputs:
