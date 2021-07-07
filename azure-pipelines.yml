@@ -11,7 +11,7 @@ pool:
 
 resources:
   webhooks:
-    - webhook: Contenful          ### Webhook alias
+    - webhook: Contentful          ### Webhook alias
       connection: Contentful    ### Incoming webhook service connection
       filters:
         - path: repositoryName      ### JSON path in the payload
