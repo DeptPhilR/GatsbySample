@@ -11,8 +11,8 @@ pool:
 
 resources:
   webhooks:
-    - webhook: Contentful2          ### Webhook alias
-      connection: Contentful2    ### Incoming webhook service connection
+    - webhook: Contentful          ### Webhook alias
+      connection: Contentful    ### Incoming webhook service connection
 
 steps:
 - task: NodeTool@0
