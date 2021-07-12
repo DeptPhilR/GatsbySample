@@ -9,10 +9,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-resources:
-  webhooks:
-    - webhook: Wibble          ### Webhook alias
-      connection: Wibble    ### Incoming webhook service connection
 
 steps:
 - task: NodeTool@0
