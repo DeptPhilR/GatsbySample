@@ -6,6 +6,9 @@
 trigger:
 - Main
 
+variables:
+  - group: dev
+
 pool:
   vmImage: ubuntu-latest
 
