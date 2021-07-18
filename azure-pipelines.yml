@@ -27,3 +27,6 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+  env:
+    CONTENTFUL_ACCESS_TOKEN: $(CONTENTFUL_ACCESS_TOKEN)
+    CONTENTFUL_SPACE_ID: $(CONTENTFUL_SPACE_ID)
