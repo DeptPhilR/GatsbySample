@@ -38,6 +38,6 @@ steps:
 - task: AzureStaticWebApp@0
   inputs:
     app_location: './public'
-    api_location: 'api'
+    api_location: ''
     skip_app_build: true
     azure_static_web_apps_api_token: 'e09fb58967c15956d06c7a11d7439a2327812cabe912637803505d6ffd99dbfb0-733fd833-5816-415f-b23a-ef80875b2e7701026901'
